@@ -1,0 +1,132 @@
+body {
+  margin: 0px auto 20px;
+  font-family: Arial, "Helvatica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url(https://carleton.ca/geography/wp-content/uploads/Geography-Banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.headerbox {
+  font-family: "Trebuchet MS";
+  float: right;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: white;
+}
+
+#nav-bar {
+  opacity: 0.5;
+  width: 100%;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  opacity: 1;
+  color: yellow;
+  background-color: #000000;
+}
+
+#intro-box {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
+  border-bottom: 5px white solid;
+  margin: 0px auto 20px auto;
+}
+
+
+#about-box {
+  white-space: pre-line;
+  height: initial;
+  margin: 0px auto;
+  float: center;
+  width: 50%;
+  align-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+  /**Add functional button*/
+#button {
+  background-color: #daa520;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  font-family: Oranienbaum;
+  color: black;
+}
+/**Make the button change color when mouse hovers over*/
+#button:hover {
+  background-color: #b8860b;
+  color: black;
+
+}
